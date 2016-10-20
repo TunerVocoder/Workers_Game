@@ -1,0 +1,90 @@
+body
+{
+	background: #b2b2b2;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+#resources
+{
+	display: flex;
+	border-bottom: 5px solid white;
+	width: 100vw;
+	height: 25px;
+}
+
+.resource
+{
+	background: #50394c;
+	border-right: 5px solid white;
+	flex-grow: 1;
+	text-align: center;
+}
+
+#game
+{
+	display: flex;
+	height: calc(100vh - 30px);
+	width: 100vw;
+}
+
+main
+{
+	background: url(../img/grid.png);
+	background-size: 25%;
+	display: flex;
+	flex-grow: 3;
+}
+
+#workers
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-left: 5px solid white;
+	width: 40px;
+	background: red;
+}
+
+.worker
+{
+	width: 40px;
+	height: 40px;
+	background: green;
+	border-bottom: 5px solid white;
+}
+
+aside
+{
+	border-left: 5px solid white;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-width: 230px;
+	overflow-y: auto;
+}
+
+.available
+{
+	text-align: center;
+}
+
+.action
+{
+	flex-grow: 1;
+	min-height: 70px;
+	width: 100%;
+	border-bottom: 5px solid white;
+	background: #f4e1d2;
+	color: black;
+	transition: 0.2s ease;
+}
+
+.action:hover
+{
+	flex-grow: 2;
+	min-height: 100px;
+	background: #ffef96;
+	border-color: #b2b2b2;
+}
